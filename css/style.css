@@ -45,6 +45,7 @@ body, #carousel {
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
 }
 #carousel img {
+  width: 100vw;
   position: absolute;
   top: 0;
   z-index: -1;
