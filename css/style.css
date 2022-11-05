@@ -48,7 +48,7 @@ body, #carousel {
   position: absolute;
   top: 0;
   z-index: -1;
-  filter: blur(3px);
+  filter: blur(1px);
 }
 
 img {
@@ -148,8 +148,8 @@ sub {
 }
 
 .card {
-  -webkit-animation: card 12s infinite;
-          animation: card 12s infinite;
+  -webkit-animation: card 24s infinite;
+          animation: card 24s infinite;
 }
 
 @-webkit-keyframes card {
