@@ -95,6 +95,10 @@ main
             text-align: left
     img
         max-width: 50%
+        cursor: pointer
+        z-index: 1000
+        transition: 0.5s linear
+
 .row2 div 
     padding-left: 120px
     padding-right: 0
@@ -157,3 +161,20 @@ a
         img
             width: 30%
             margin: 0
+#topLayer
+    transition: 0.1s linear
+    display: none
+    position: fixed
+    top: 0
+    z-index: 3000
+    padding-top: 20vh
+    width: 100vw
+    height: 100vh
+    background-color: rgba(0,0 ,0 ,0.6 )
+    img
+        width: 100%
+        padding: 0 25%
+    p
+        margin: 0 auto
+        text-align: center
+        opacity: 0.6
