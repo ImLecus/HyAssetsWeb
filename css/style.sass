@@ -162,7 +162,7 @@ a
             width: 30%
             margin: 0
 #topLayer
-    transition: 0.1s linear
+    transition: 0.3s linear
     display: none
     position: fixed
     top: 0
@@ -171,10 +171,18 @@ a
     width: 100vw
     height: 100vh
     background-color: rgba(0,0 ,0 ,0.6 )
+    animation: fadeIn 0.2s
     img
         width: 100%
         padding: 0 25%
+        animation: fadeIn 0.2s
     p
         margin: 0 auto
         text-align: center
         opacity: 0.6
+
+@keyframes fadeIn 
+    0%
+        opacity: 0
+    100%
+        opacity: 1
