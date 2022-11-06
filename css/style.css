@@ -360,7 +360,7 @@ a {
     width: 60%;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   #carousel {
     height: 300px;
   }
