@@ -76,8 +76,8 @@ main {
   font-weight: bolder;
   cursor: pointer;
 }
-#btn:active {
-  background-color: #77C6F0;
+#btn:hover{
+  background: linear-gradient(to bottom, #45a4df, #22658e);
 }
 #btn span {
   font-size: 2em;
