@@ -292,6 +292,7 @@ a {
   }
   h3 {
     font-size: 2em;
+    padding: 0 10px;
   }
   .row img, .row2 img {
     width: 80vw !important;
