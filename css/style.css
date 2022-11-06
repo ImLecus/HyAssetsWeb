@@ -10,20 +10,18 @@ body, #carousel {
   flex-direction: column;
 }
 
-#carousel {
-  width: 100%;
-  height: 400px;
-  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.2666666667));
-  justify-content: stretch;
-  border-bottom: 1px solid #b7cedd;
+main {
+  display: flex;
+  flex-direction: column;
 }
-#carousel button {
-  margin: 0;
+
+#btn {
+  position: absolute;
+  top: 370px;
+  align-self: center;
   width: 25%;
+  z-index: 2000;
   height: 60px;
-  margin: 0 auto;
-  margin-top: auto;
-  transform: translateY(30px);
   background: linear-gradient(to bottom, #3c91c5, #225b8b);
   border: 2px solid #060b12;
   border-radius: 10px;
@@ -31,18 +29,26 @@ body, #carousel {
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.2666666667));
   outline: 2px solid #AB8D42;
   font-family: "penumbra-serif-std";
-  transition: linear 1s;
   cursor: pointer;
 }
-#carousel button:hover {
+#btn:hover {
   background-color: #77C6F0;
 }
-#carousel button span {
+#btn span {
   font-size: 2em;
   letter-spacing: 0;
 }
-#carousel button span::before {
+#btn span::before {
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+#carousel {
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.2666666667));
+  justify-content: stretch;
+  border-bottom: 1px solid #b7cedd;
 }
 #carousel img {
   width: 100vw;
@@ -264,7 +270,7 @@ a {
   }
   .row * {
     width: 100% !important;
-    padding: 0 5%;
+    padding: 0 5% !important;
     text-align: center !important;
   }
   .row img {
@@ -278,11 +284,16 @@ a {
   }
   .row2 * {
     width: 100% !important;
-    padding: 0 5%;
+    padding: 0 5% !important;
     text-align: center !important;
   }
   .row2 img {
     margin: 0 auto;
+  }
+}
+@media (max-width: 800px) {
+  #btn {
+    width: 40%;
   }
 }
 @media (max-width: 500px) {
@@ -298,7 +309,7 @@ a {
     width: 80vw !important;
     padding: 0;
   }
-  #carousel button {
+  #btn {
     width: 60%;
   }
 }
