@@ -11,6 +11,26 @@ body,#carousel
 main
     display: flex
     flex-direction: column
+#topLayer
+    transition: 0.3s linear
+    display: none
+    position: fixed
+    top: 0
+    z-index: 3000
+    padding-top: 20vh
+    width: 100vw
+    height: 100vh
+    background-color: rgba(0,0 ,0 ,0.6 )
+    animation: fadeIn 0.2s
+    img
+        width: 100%
+        padding: 0 25%
+        animation: fadeIn 0.2s
+    p
+        margin: 0 auto
+        text-align: center
+        opacity: 0.6
+
 #btn
     position: absolute
     top: 370px
@@ -46,7 +66,7 @@ main
         position: absolute
         top:0
         z-index: -1
-        filter: blur(1px)
+        filter: blur(2px)
         height: 400px
 img
     filter: drop-shadow(0px 10px 20px #00000044)
@@ -62,7 +82,7 @@ h1
     font-size: 5em
     letter-spacing: 1px
     padding: 0
-    filter: drop-shadow(0px 0px 10px #000000)
+    filter: drop-shadow(0px 0px 5px #000000)
     line-height: 58px
 h3
     font-size: 2rem
@@ -189,6 +209,8 @@ a
 @media (max-width: 800px)
     #btn
         width: 40%
+    #topLayer img
+        padding: 0 10% !important
 @media (max-width: 500px)
     h1
         margin-top: 100px
@@ -198,10 +220,11 @@ a
         padding: 0 10px
     .row,.row2
         img
-            width: 80vw !important
-            padding: 0
+            width: max-content !important
+            padding: 0 !important
     #btn
         width: 60%
+    
 @media (max-width: 350px)
     #carousel 
         height: 300px
@@ -212,25 +235,6 @@ a
         font-size: 3em
     h3
         font-size: 1.5em
-#topLayer
-    transition: 0.3s linear
-    display: none
-    position: fixed
-    top: 0
-    z-index: 3000
-    padding-top: 20vh
-    width: 100vw
-    height: 100vh
-    background-color: rgba(0,0 ,0 ,0.6 )
-    animation: fadeIn 0.2s
-    img
-        width: 100%
-        padding: 0 25%
-        animation: fadeIn 0.2s
-    p
-        margin: 0 auto
-        text-align: center
-        opacity: 0.6
 
 @keyframes fadeIn 
     0%
