@@ -178,6 +178,7 @@ main {
   cursor: pointer;
   z-index: 1000;
   transition: 0.5s linear;
+  aspect-ratio: 16/9;
 }
 
 .row2 div {
@@ -292,19 +293,19 @@ a {
   }
   .row, .row2 {
     overflow: hidden;
-    justify-content: center;
+    justify-content: space-around;
   }
   .row div, .row2 div {
     width: 30%;
   }
   .row img, .row2 img {
-    width: 30%;
+    width: 50%;
     margin: 0;
   }
 }
 @media (max-width: 1100px) {
-  .row {
-    flex-direction: column;
+  .row,.row2{
+    justify-content: center;
   }
   .row div {
     padding: 0;
@@ -316,6 +317,9 @@ a {
   }
   .row img {
     margin: 0 auto;
+  }
+  .row{
+    flex-direction: column;
   }
   .row2 {
     flex-direction: column-reverse;
@@ -331,6 +335,10 @@ a {
   .row2 img {
     margin: 0 auto;
   }
+    .row img,
+    .row2 img {
+      max-width: 75% !important;
+    }
 }
 @media (max-width: 800px) {
   #btn {
@@ -339,6 +347,7 @@ a {
   #topLayer img {
     padding: 0 10% !important;
   }
+  
 }
 @media (max-width: 500px) {
   h1 {
@@ -354,6 +363,7 @@ a {
     width: -webkit-max-content !important;
     width: -moz-max-content !important;
     width: max-content !important;
+    
     padding: 0 !important;
   }
   #btn {
