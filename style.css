@@ -82,6 +82,7 @@ main {
 #btn span {
   font-size: 2em;
   letter-spacing: 0;
+  text-transform: uppercase;
 }
 #btn span::before {
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
