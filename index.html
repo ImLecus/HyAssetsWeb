@@ -27,10 +27,7 @@
         <div class="row">
             <div>
                 <h2>Multiple file format</h2>
-                <p>Every creature is avaliable in 4 different formats and they have some textures to alternate with.
-                    Actually it brings some prefabricated characters, as the kweebecs and zombies.
-                
-                </p>
+                <p>Every creature is avaliable in 4 different formats and they have some textures to alternate with. Actually it brings some prefabricated characters, as the kweebecs and zombies.</p>
             </div>
             <img src="./src/hyassets1.jpg" alt="preview 1">
         </div>
@@ -38,28 +35,20 @@
             <img src="./src/hyassets2.jpg" alt="preview 2">
             <div>
                 <h2>fully rigged models</h2>
-                <p>Models are completely rigged and ready to animate. Each extremity of their body is divided to make the rigging 
-                    process practically null for you!
-
-                </p>
+                <p>Models are completely rigged and ready to animate. Each extremity of their body is divided to make the rigging process practically null for you!</p>
             </div>
         </div>
         <div class="row">
             <div>
                 <h2>Item models</h2>
-                <p>Additionally, it has some JSON models for some items and a big variety of block textures. That brings the
-                    possibility to create your own landscapes.
-                </p>
+                <p>Additionally, it has some JSON models for some items and a big variety of block textures. That brings the possibility to create your own landscapes.</p>
             </div>
             <img src="./src/hyassets3.jpg" alt="preview 3">
         </div>
     </main>
     <footer>
-        <p>
-          HyAssets by <a href="https://twitter.com/Powerbyte7">Powerbyte7</a> <br>
-        Web by <a href="https://twitter.com/ImLecus">Lecus</a>  
-        </p>
+        <p>HyAssets by <a href="https://twitter.com/Powerbyte7">Powerbyte7</a><br>Web by <a href="https://twitter.com/ImLecus">Lecus</a></p>
     </footer>
-    <script src="./script.js"></script>
+    <script>document.querySelectorAll(".row img").forEach(image=>{image.addEventListener("click",()=>{makeBigger(image);});});document.querySelectorAll(".row2 img").forEach(image=>{image.addEventListener("click",()=>{makeBigger(image);});});function makeBigger(i){document.getElementById("topLayer").style.display = "block";document.querySelector("#topLayer img").src = i.src;}document.querySelector("#topLayer").addEventListener("click",()=>{document.getElementById("topLayer").style.display = "none";});</script>
 </body>
 </html>
