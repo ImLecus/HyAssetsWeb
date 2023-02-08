@@ -8,21 +8,37 @@
     <link rel="stylesheet" href="./style.min.css">
     <link rel="shortcut icon" href="./src/Logo.jpg" type="image/x-icon">
     <meta name="description" content="A collection of Hytale 3D models by Powerbyte7. Web by Lecus.">
+    <base target="_blank">
 </head>
 <body>
     <div id="topLayer">
         <img src="" class="modalImg">
         <p>HyAssets by Powerbyte7</p>
     </div>
-    <div id="carousel">
-        <img src="./src/dinos.jpg" class="card c1">
-        <img src="./src/furniture.jpg" class="card c2">
-        <img src="./src/campfire.jpg" class="card c3">
-        <img src="./src/leaves.jpg" class="card c4">
-        <img src="./src/dinos.jpg" class="card c5">
+    <section id="carousel">
+        <picture>
+            <source srcset="./src/dinos.webp" type="image/webp">
+            <img src="./src/dinos.jpg" class="card c1">
+        </picture>
+        <picture>
+            <source srcset="./src/furniture.webp" type="image/webp">
+            <img src="./src/furniture.jpg" class="card c2">
+        </picture>
+        <picture>
+            <source srcset="./src/campfire.webp" type="image/webp">
+            <img src="./src/campfire.jpg" class="card c3">
+        </picture>
+        <picture>
+            <source srcset="./src/leaves.webp" type="image/webp">
+            <img src="./src/leaves.jpg" class="card c4">
+        </picture>
+        <picture>
+            <source srcset="./src/dinos.webp" type="image/webp">
+            <img src="./src/dinos.jpg" class="card c5">
+        </picture>
         <h1>HyAssets<sub>1.1</sub></h1>
         <h3>A collection of Hytale 3D models by Powerbyte7</h3>
-    </div>
+    </section>
     <main>
         <button id="btn"><a href="https://github.com/Powerbyte7/HyAssets/archive/refs/tags/v1.1.zip" download>download</a></button>
         <div class="row">
@@ -34,7 +50,6 @@
                 <source srcset="./src/hyassets1.webp" type="image/webp">
                 <img src="./src/hyassets1.jpg" alt="preview 1">
             </picture>
-            
         </div>
         <div class="row2">
             <picture>
