@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HyAssets by Powerbyte7</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.min.css">
     <link rel="shortcut icon" href="./src/Logo.jpg" type="image/x-icon">
+    <meta name="description" content="A collection of Hytale 3D models by Powerbyte7. Web by Lecus.">
 </head>
 <body>
     <div id="topLayer">
@@ -23,16 +24,23 @@
         <h3>A collection of Hytale 3D models by Powerbyte7</h3>
     </div>
     <main>
-        <button id="btn" onclick='window.location.href = "https://github.com/Powerbyte7/HyAssets/archive/refs/tags/v1.1.zip"'><span>download</span></button>
+        <button id="btn"><a href="https://github.com/Powerbyte7/HyAssets/archive/refs/tags/v1.1.zip" download>download</a></button>
         <div class="row">
             <div>
                 <h2>Multiple file format</h2>
                 <p>Every creature is avaliable in 4 different formats and they have some textures to alternate with. Actually it brings some prefabricated characters, as the kweebecs and zombies.</p>
             </div>
-            <img src="./src/hyassets1.jpg" alt="preview 1">
+            <picture>
+                <source srcset="./src/hyassets1.webp" type="image/webp">
+                <img src="./src/hyassets1.jpg" alt="preview 1">
+            </picture>
+            
         </div>
         <div class="row2">
-            <img src="./src/hyassets2.jpg" alt="preview 2">
+            <picture>
+                <source srcset="./src/hyassets2.webp" type="image/webp">
+                <img src="./src/hyassets2.jpg" alt="preview 2">
+            </picture>
             <div>
                 <h2>fully rigged models</h2>
                 <p>Models are completely rigged and ready to animate. Each extremity of their body is divided to make the rigging process practically null for you!</p>
@@ -43,7 +51,10 @@
                 <h2>Item models</h2>
                 <p>Additionally, it has some JSON models for some items and a big variety of block textures. That brings the possibility to create your own landscapes.</p>
             </div>
-            <img src="./src/hyassets3.jpg" alt="preview 3">
+            <picture>
+                <source srcset="./src/hyassets3.webp" type="image/webp">
+                <img src="./src/hyassets3.jpg" alt="preview 3">
+            </picture>
         </div>
     </main>
     <footer>
