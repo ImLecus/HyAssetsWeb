@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcos González">
+    <meta name="description" content="A collection of Hytale 3D models by Powerbyte7. Web by Lecus.">
     <title>HyAssets by Powerbyte7</title>
     <link rel="stylesheet" href="./style.min.css">
     <link rel="shortcut icon" href="./src/Logo.jpg" type="image/x-icon">
-    <meta name="description" content="A collection of Hytale 3D models by Powerbyte7. Web by Lecus.">
     <base target="_blank">
 </head>
 <body>
@@ -75,6 +76,23 @@
     <footer>
         <p>HyAssets by <a href="https://twitter.com/Powerbyte7">Powerbyte7</a><br>Web by <a href="https://twitter.com/ImLecus">Lecus</a></p>
     </footer>
-    <script>document.querySelectorAll(".row img").forEach(image=>{image.addEventListener("click",()=>{makeBigger(image);});});document.querySelectorAll(".row2 img").forEach(image=>{image.addEventListener("click",()=>{makeBigger(image);});});function makeBigger(i){document.getElementById("topLayer").style.display = "block";document.querySelector("#topLayer img").src = i.src;}document.querySelector("#topLayer").addEventListener("click",()=>{document.getElementById("topLayer").style.display = "none";});</script>
+    <script>
+        document.querySelectorAll(".row img").forEach(image => {
+            image.addEventListener("click", () => { 
+                makeBigger(image)
+            })})
+        document.querySelectorAll(".row2 img").forEach(image => {
+            image.addEventListener("click", () => {
+                makeBigger(image)
+            })})
+        function makeBigger(i){
+            document.getElementById("topLayer").style.display = "block";
+            document.querySelector("#topLayer img").src = i.src;
+        }
+        document.querySelector("#topLayer").addEventListener("click",() => {
+            document.getElementById("topLayer").style.display = "none";
+            }
+        );
+    </script>
 </body>
 </html>
